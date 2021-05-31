@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    height: 100vh;
+    background-color: rgb(39,41,68);
+    font-family: sans-serif;
+}
+
+.score{
+    color: rgb(224, 224, 224);
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.score h2{
+    font-size: 30px;
+}
+.score p{
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.target-score{
+    color: rgb(224, 224, 224);
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+.target-score p,
+.target-score span{
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+}
+.target-score input{
+    width: 150px;
+    height 50px;
+    background: none;
+    border: none;
+    color: rgb(224, 224, 224);
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(45,117,96);
+    border-radius: 3px;
+    list-style: none;
+    
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+     margin: 0;
+}
+.Intro{
+    color: rgb(224, 224, 224);
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: none;
+    justify-content: space-around;
+    transition: opacity 0.5s ease ;
+}
+.Intro h1{
+    font-size: 50px ;
+}
+.Intro button,
+.match button
+{
+    width: 150px;
+    height 50px;
+    background: none;
+    border: none;
+    color: rgb(224, 224, 224);
+    font-size: 20px;
+    background-color: rgb(45,117,96);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.match{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: opacity 0.5s ease 0.5s;
+}
+.reset{
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.winner{
+    color: rgb(224, 224, 224);
+    text-align: center;
+    font-size: 50px;
+}
+.hands,
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.player-hand{
+    transform: rotateY(180deg);
+}
+div.fadeOut{
+    opacity: 0;
+    pointer-events: none;
+}
+div.fadeIn{
+    opacity: 1;
+    pointer-events: all;
+}
+
+@keyframes shakePlayerHands{
+    0%{
+        transform: rotateY(180deg) translateY(0px);
+    }
+    20%{
+        transform: rotateY(180deg) translateY(-50px);
+    }
+    40%{
+        transform: rotateY(180deg) translateY(0px);
+    }
+    60%{
+        transform: rotateY(180deg) translateY(-50px);
+    }80%{
+        transform: rotateY(180deg) translateY(0px);
+    }
+    100%{
+        transform: rotateY(180deg) translateY(-50px);
+    }
+}
+
+@keyframes shakeComputerrHands{
+    0%{
+        transform: translateY(0px);
+    }
+    20%{
+        transform: translateY(-50px);
+    }
+    40%{
+        transform:translateY(0px);
+    }
+    60%{
+        transform:translateY(-50px);
+    }80%{
+        transform:translateY(0px);
+    }
+    100%{
+        transform:translateY(-50px);
+    }
+}
