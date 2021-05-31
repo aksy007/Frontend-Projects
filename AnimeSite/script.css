@@ -1,0 +1,289 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: #000000;
+}
+
+h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.navbar{
+    height : 8vh;
+    background-color: #000000;
+    color: #FFFFF0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.searchBox{
+    padding-left: 100px;
+}
+
+.search{
+    height: 30px;
+    width: 250px;
+    border-style:none;
+    color: #FFFFF0;
+    background-color:#303030;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.searchIcon{
+    height: 30px;
+    float: right;
+    padding: 6px 10px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 20px;
+    border: none;
+    border-style: none;
+    cursor: pointer;
+}
+
+.links{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.links li{
+    list-style: none;
+}
+
+.links a{
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #FFFFF0;
+    transition: 0.5s ease-out;
+}
+
+
+.menu div{
+    width: 24px;
+    height: 3px;
+    background-color: rgb(226,226,226);
+    margin: 5px;
+}
+
+.carousel-cell1,
+.carousel-cell2, 
+.carousel-cell3,
+.carousel-cell4,
+.carousel-cell5
+{
+    width: 750px;
+    height: 500px;
+    margin-left: 7px;
+    margin-right: 7px;
+    border-radius: 5px;
+}
+
+.carousel-cell1{
+    background-image: url('Images/slider/jujutsuKaise.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.carousel-cell2{
+    background-image: url('Images/slider/Deku1680x1050.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.carousel-cell3{
+    background-image: url('Images/slider/tanjiro-1920x1080.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.carousel-cell4{
+    background-image: url('Images/slider/aot1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.carousel-cell5{
+    background-image: url('Images/slider/naruto.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.flickity-page-dots .dot
+{
+    background: #FFFFF0;
+}
+
+.AnimeBlcoks{
+    display: flex;
+    padding-top: 33px;
+    text-align: center;
+    cursor: pointer;
+}
+.AnimeBlcoks1
+{   
+    display: flex;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 40px;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 20px;
+    color:  #FFFFFF;
+}
+
+.naruto,
+.opm,
+.onepiece,
+.aot,
+.demonslayer,
+.jujutsukaisen,
+.fairytails,
+.mha
+{
+    height: 400px;
+    width: 500px;
+    padding-top: 400px; 
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.naruto{
+    background-image: url('Images/Naruto.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.opm{
+    background-image: url('Images/onePunchMan.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.onepiece{
+    background-image: url('Images/OnePiece.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.aot{
+    background-image: url('Images/aot.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.mha{
+    background-image: url('Images/MHA.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.demonslayer{
+    background-image: url('Images/Demon\ Slayer.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.jujutsukaisen{
+    background-image: url('Images/JujutsuKaisen.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.fairytails{
+    background-image: url('Images/fairytails.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.nxtPage{
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    padding: 27px;
+    color: #e0e0d6;
+    font-size: 20px;
+}
+.page{
+    margin-right: 15px ;
+}
+.next{
+    margin-left: 15px;
+}
+.pageNo,
+.next
+{
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.pageNo:hover{
+    color: purple;
+}
+.next:hover{
+    color: purple;
+}
+
+.bottomBar{
+    height : 25vh;
+    background-color: #303033;
+    color: #FFFFF0;
+    display: flex;
+}
+
+.bottomBar .left{
+    width: 800px;
+    margin-left: 20px;
+    margin-right: 35px;
+    color:  #cccccc;
+}
+.bottomBar .middle{
+    width: 350px;
+    margin-left: 20px;
+    margin-right: 35px;
+    color: #cccccc;
+}
+.bottomBar .right{
+    width: 250px;
+    margin-left: 100px;
+    color: #cccccc;
+}
+
+.bottomBar .right, .middle{
+    text-align: center;
+    padding: 20px;
+}
+
+
+.bottomBar .right h3,.middle h3{
+    cursor: pointer;
+    transition: 0.4s ease-in;
+}
+.right h3:hover,
+.middle h3:hover
+{
+    color: white;
+}
+
+.socialmedia .fa{
+    color:#303033;
+    background-color: #cccccc;
+    margin-top: 15px;
+    margin-left: 15px;
+    height: 25px;
+    width: 27px;
+    align-items: center;
+    padding: 4px;
+    border-radius: 7px;
+}

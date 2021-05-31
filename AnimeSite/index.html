@@ -1,0 +1,93 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="script.css">
+    <title>AnimeSite</title>
+</head>
+<body> 
+    <div class="container">
+
+            <!-- Nav Bar --> 
+            <div class="navbar">
+                <h2>Anime</h2>
+                <form class="searchBox">
+                    <input type="text" placeholder="Search.." class="search">
+                    <button class="searchIcon" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+                <ul class="links">
+                    <li> <a href="#">Home</a> </li>    
+                    <li> <a href="#">About us</a></li>
+                </ul>
+            </div>
+
+            <!--Image corousel-->
+            <div class="carousel" data-flickity='{ "wrapAround":true, "autoPlay": true }'>
+                <div class="carousel-cell1"></div>
+                <div class="carousel-cell2"></div>
+                <div class="carousel-cell3"></div>
+                <div class="carousel-cell4"></div>
+                <div class="carousel-cell5"></div>
+            </div>
+              
+
+
+            <!-- Anime Blocks -->
+            <div class="AnimeBlcoks">
+                <div class="naruto" onclick="location.href=''" ><span class="title">Naruto</span></div>
+                <div class="opm" onclick="location.href=''"><span class="title">One Punch Man</span></div>
+                <div class="aot" onclick="location.href=''"><span class="title">Attack On Titan</span></div>
+                <div class="onepiece" onclick="location.href=''"><span class="title">One Piece</span></div>
+            </div>
+            <div class="AnimeBlcoks1">
+                <div class="demonslayer" onclick="location.href=''"><span class="title">Demon Slayer</span></div>
+                <div class="fairytails" onclick="location.href=''"><span class="title">Fairy Tails</span></div>
+                <div class="jujutsukaisen" onclick="location.href=''"><span class="title">Jujutsu Kaisen</span></div>
+                <div class="mha" onclick="location.href=''"><span class="title">My hero Academia</span></div>
+            </div>
+
+            <!-- Next Page -->
+            <div class="nxtPage">
+                <div class="page"> <h3> Page :</h3> </div>
+                <div class="pageNo"> <h3> 2 </h3> </div>
+                <div class="pageNo"> <h3> 3 </h3> </div>
+                <div class="pageNo"> <h3> 4 </h3> </div>
+                <div class="pageNo"> <h3> 5 </h3> </div>
+                <div class="next"> <h3> Next </h3> </div>
+            </div>
+
+            <!--Bottom Bar-->
+            <div class="bottomBar">
+                <div class="left">
+                    <h1 style="padding: 15px; color: white;">Anime</h1>
+                    <h3 style="padding-left: 15px;">Copyright © anime.to. All Rights Reserved</h2>
+                    <div class="socialmedia">
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-reddit" ></a>
+                        <a href="#" class="fa fa-facebook" style="padding-left: 7px;"></a>
+                    </div>
+                    <p style="padding: 10px;">Disclaimer: This site does not store any files on its server.
+                        All contents are provided by non-affiliated third parties.</p>
+                </div>
+
+                <div class="middle">
+                    <h1 style="color: white;padding-bottom: 10px;">Help</h1>
+                    <h3>Contact</h3>
+                    <h3>FAQ</h3>
+                    <h3>Request</h3>
+                </div>
+
+                <div class="right">
+                    <h1 style="color: white; padding-bottom: 10px;"> Links</h1>
+                    <h3>A-Z list</h3>
+                    <h3>Most Watched</h3>
+                    <h3>Upcoming</h3>
+                </div>
+            </div>
+            
+        </div>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <script src="script.js"></script>
+
+</body>
+</html>
