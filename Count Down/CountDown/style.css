@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  
+    background-image: url("headphones.jpg");
+    background-size: 1920px 1080px;
+    background-repeat: no-repeat;
+}
+
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #F08080;
+}
+
+.countdown{
+    display: flex;
+    color: #ff3399;
+    font-weight: bold;
+    justify-content: space-around;
+    height: 100px;
+    width: 1000px;
+    transform: translateX(40%);
+    margin: 25px;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
