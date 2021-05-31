@@ -1,0 +1,37 @@
+.carousel-cell1,
+.carousel-cell2, 
+.carousel-cell3,
+.carousel-cell4,
+.carousel-cell5
+{
+    width: 750px;
+    height: 500px;
+    border-radius: 5px;
+}
+
+.carousel-cell1{
+    background-image: url('Images/jujutsuKaise.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.carousel-cell2{
+    background-image: url('Images/Deku1680x1050.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.carousel-cell3{
+    background-image: url('Images/tanjiro-1920x1080.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.carousel-cell4{
+    background-image: url('Images/jujutsuKaise.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.carousel-cell5{
+    background-image: url('Images/naruto.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
