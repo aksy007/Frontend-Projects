@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(120deg, #e6cc85,#ec797f);
+    font-family: sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.music-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-200px);
+}
+
+.music-container{
+    height: 100px;
+    width: 400px;
+    position: relative;
+    background-color: #ffffff;
+    margin: 50px;
+    border-radius: 14px;
+}
+
+.music-cover{
+    height: 70px;
+    width: 70px;
+    position: relative;
+    transform: translate(20px,15px);
+}
+
+.music-cover img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: rotate 3s linear infinite;
+    animation-play-state: paused;
+}
+
+.music-container.play .music-cover img {
+    animation-play-state: running;
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+.music-info{
+    color: #eb7a72;
+    height: 50px;
+    width: 270px;
+    position: absolute;
+    top: 7px;
+    left: 100px;
+    text-align: center;
+}
+
+.progress-bar{
+    background-color: rgb(226, 223, 223);
+    height: 5px;
+    width: calc(100% - 25px);
+    margin: 5px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.progress{
+    background-color: rgb(107, 52, 104);
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+
+
+.navigation-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(25px,-10px);
+}
+  
+.action-btn {
+    background-color: #fff;
+    border: 0;
+    color: #dfdbdf;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 20px;
+    transition: color 0.2s ease-in;
+}
+
+.action-btn:hover{
+    color: rgb(83, 83, 83);
+}
+
+.action-btn-play{
+    color: #cdc2d0;
+    font-size: 25px;
+}
+
+
+/*  ---------> PlayList  <-------------- */
+
+
+.playlist-section{
+    height: 70vh;
+    width: 500px;
+    background-color: rgb(235, 147, 147);
+    position: absolute;
+    top: 125px;
+    right: 0;
+    border-radius: 10px;
+}
+
+.menu{
+    height: 75px;
+    background-color:#ff8800;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.filter-btn{
+    height: 60px;
+    width: 100px;
+    cursor: pointer;
+    position: relative;
+    background: none;
+    border: none;
+}
+
+
+.all,
+.fav
+{
+    font-size: 25px;
+    color: #dbd4d7;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease-in;
+}
+
+.fav{
+    padding-left: 20px;
+}
+
+.filter-name{
+    position: absolute;
+    top: 30px;
+    left: 2px;
+}
+
+.audio-file{
+    width: calc(100% - 20px);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #eb7a72;
+    margin: 5px 10px;
+}
+
+.cover-image{
+    height: calc(100%-5px);
+    width: 70px;
+    object-fit: cover;
+    position: absolute;
+    left: 10px;
+}
+
+.audio-title{
+    position: absolute;
+    left: 100px;
+    cursor: pointer;
+}
+
+.fav-toggler{
+    background: none;
+    border: none;
+    position: absolute;
+    right: 25px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease-in;
+}
+
+.fav-toggler:hover{
+    color: red;
+}
+
+.toggler{
+    color: red; 
+}
+
+.filter-selected{
+    color: rgb(92, 41, 41);
+}   
+
+.menu-icon{
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    display: none;
+}
+.menu-icon div{
+    width: 27px;
+    height: 4px;
+    background-color: rgb(226,226,226);
+    margin: 5px;
+}
+
+
+
+/*  -------->Responsive Effects<----------    */
+
+@media screen and (max-width:1100px) {
+    .music-section{
+        transform: translateX(-50%);
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    body{
+        overflow: hidden;
+    }
+    .playlist-section{
+        position: absolute;
+        top: 60px;
+        right: 0px;
+        height: 500px;
+        width: 450px;
+        transition: 0.5s ease-in;
+        transform: translateX(100%);
+    }
+    .music-section{
+        transform: translateX(0%);
+        transition: 0.5s ease-in;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.toggle-down{
+    transform: translateY(100%);
+}
+
+.active-menu{
+    transform: translateX(0%);
+}
+
+.toggle .upper{
+    transform: rotate(-45deg) translate(-5px,6px);
+    transition: 0.5s ease-in;
+}
+
+.toggle .middle{
+    opacity: 0;
+    transition: 0.5s ease-in;
+}
+
+.toggle .lower{
+    transform: rotate(45deg) translate(-5px,-6px);
+    transition: 0.5s ease-in;
+}
