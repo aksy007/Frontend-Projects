@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+     background-image: url("3437.jpg");
+}
+
+header{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+header,form{
+    min-height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-input{
+    background-color: wheat;
+    font-weight: bold;
+}
+
+form input,
+form button{
+    padding: 0.5rem;
+    font-size:25px;
+    border: none;
+}
+
+form button{
+    background-color: rgb(59, 155, 211);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+form button:hover{
+    background-color: white;
+    color: rgb(59, 155, 211);
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list{
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo{
+    margin: 0.5rem;
+    background: wheat;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.delete-btn{
+    background: green;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size : 15px;
+}
+
+.fa-trash{
+    pointer-events: none;
+}
