@@ -5,7 +5,6 @@ let activeNote=false;
 
 //Functions
 const appendNote = ()=>{
-
     //create note div
     const note = document.createElement('div');
     note.classList.add("note");
@@ -36,4 +35,4 @@ notes.addEventListener('click',(item)=>{
     if(item.target.classList.contains('trash-note'))
         item.target.parentElement.parentElement.remove();
     
-})
+});
